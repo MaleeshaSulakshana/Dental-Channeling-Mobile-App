@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    tools:context=".Activity.Doctor.DoctorChangePswActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="Change Profile Password"
+                android:textColor="@color/indigo"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Email"
+                    android:textColorHint="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/txtFieldPsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Current Password"
+                    android:textColorHint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/indigo"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/txtFieldNewPsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="New Password"
+                    android:textColorHint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/indigo"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/txtFieldConfirmNewPsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Confirm New Password"
+                    android:textColorHint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/indigo"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnChangePsw"
+                    android:layout_width="220dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bluecircle"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Change Password"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="220dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bluecirclestoke"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

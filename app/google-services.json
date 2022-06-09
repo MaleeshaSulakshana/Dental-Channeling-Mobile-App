@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "114945558933",
+    "project_id": "dental-channelling",
+    "storage_bucket": "dental-channelling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114945558933:android:50e39be6a45429823e8e9c",
+        "android_client_info": {
+          "package_name": "com.example.dental_channelling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114945558933-b17kiattm1gi2c42lvcvp4oqdiim5njo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgKhNx2im3SP3dMzQM1uCYZPdmJUOaZ_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114945558933-b17kiattm1gi2c42lvcvp4oqdiim5njo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

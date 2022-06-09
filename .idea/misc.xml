@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/External-Projects/Anuki/mobile-app/Develop/Dental-Channelling/app/src/main/res/layout/activity_admin_add_doctor.xml" value="0.23703703703703705" />
+        <entry key="..\:/External-Projects/Anuki/mobile-app/Develop/Dental-Channelling/app/src/main/res/layout/activity_main.xml" value="0.23703703703703705" />
+        <entry key="..\:/External-Projects/Anuki/mobile-app/Develop/Dental-Channelling/app/src/main/res/layout/exit_dialog_box.xml" value="0.25416666666666665" />
+        <entry key="..\:/External-Projects/Anuki/mobile-app/Develop/Dental-Channelling/app/src/main/res/layout/view_appointments_row.xml" value="0.23703703703703705" />
+        <entry key="..\:/External-Projects/Anuki/mobile-app/Develop/Dental-Channelling/app/src/main/res/layout/view_doctors_row.xml" value="0.23703703703703705" />
+        <entry key="..\:/External-Projects/Anuki/mobile-app/Develop/Dental-Channelling/app/src/main/res/layout/view_patients_row.xml" value="0.23703703703703705" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

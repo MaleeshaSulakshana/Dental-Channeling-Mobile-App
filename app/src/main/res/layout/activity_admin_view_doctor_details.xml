@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    tools:context=".Activity.Admin.AdminViewDoctorDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Doctor Profile Details"
+                android:textAllCaps="true"
+                android:textColor="@color/indigo"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileIcon"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/tooth_repair"
+                    app:civ_border_color="@android:color/transparent"
+                    app:civ_border_width="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:enabled="true"
+                    android:hint="Name"
+                    android:textColorHint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:enabled="false"
+                    android:hint="Email"
+                    android:textColorHint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:enabled="true"
+                    android:hint="Mobile Number"
+                    android:textColorHint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_phone"
+                    app:startIconTint="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="phone"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldCharges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:enabled="true"
+                    android:hint="Channelling Charges"
+                    android:textColorHint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_money"
+                    app:startIconTint="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="number"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:enabled="true"
+                    android:hint="Other Details"
+                    android:textColorHint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_details"
+                    app:startIconTint="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="text"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="14dp"
+                    android:text="Available Days"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/daysSelector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center_vertical"
+                        app:selectionRequired="true"
+                        app:singleLine="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipMon"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="52dp"
+                            android:paddingRight="5dp"
+                            android:text="Mon"
+                            android:textColor="@color/black"
+                            app:checkedIcon="@drawable/ic_event_available"
+                            app:checkedIconEnabled="true"
+                            app:checkedIconTint="@color/black"
+                            app:chipBackgroundColor="@color/liteGray"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTue"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Tue"
+                            android:textColor="@color/black"
+                            app:checkedIcon="@drawable/ic_event_available"
+                            app:checkedIconEnabled="true"
+                            app:checkedIconTint="@color/black"
+                            app:chipBackgroundColor="@color/liteGray"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipWen"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Wen"
+                            android:textColor="@color/black"
+                            app:checkedIcon="@drawable/ic_event_available"
+                            app:checkedIconEnabled="true"
+                            app:checkedIconTint="@color/black"
+                            app:chipBackgroundColor="@color/liteGray"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipThu"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Thu"
+                            android:textColor="@color/black"
+                            app:checkedIcon="@drawable/ic_event_available"
+                            app:checkedIconEnabled="true"
+                            app:checkedIconTint="@color/black"
+                            app:chipBackgroundColor="@color/liteGray"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipFri"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Fri"
+                            android:textColor="@color/black"
+                            app:checkedIcon="@drawable/ic_event_available"
+                            app:checkedIconEnabled="true"
+                            app:checkedIconTint="@color/black"
+                            app:chipBackgroundColor="@color/liteGray"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipSat"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Sat"
+                            android:textColor="@color/black"
+                            app:checkedIcon="@drawable/ic_event_available"
+                            app:checkedIconEnabled="true"
+                            app:checkedIconTint="@color/black"
+                            app:chipBackgroundColor="@color/liteGray"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipSun"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Sun"
+                            android:textColor="@color/black"
+                            app:checkedIcon="@drawable/ic_event_available"
+                            app:checkedIconEnabled="true"
+                            app:checkedIconTint="@color/black"
+                            app:chipBackgroundColor="@color/liteGray"/>
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </HorizontalScrollView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:enabled="true"
+                    android:hint="Available Time"
+                    android:textColorHint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_clock"
+                    app:startIconTint="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="text"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="220dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bluecirclestoke"
+                    android:gravity="center"
+                    android:text="Update Doctor"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="220dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bluecirclestoke"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

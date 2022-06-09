@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dental_channelling">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tooth_repair"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tooth_repair"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DentalChannelling">
+        <activity android:name=".Activity.Patient.ChannellingActivity"></activity>
+        <activity android:name=".Activity.Admin.AdminAddDoctorActivity"></activity>
+        <activity android:name=".Activity.Admin.AdminDentalAboutActivity" />
+        <activity android:name=".Activity.Admin.AdminPswChangeActivity" />
+        <activity android:name=".Activity.Admin.AdminProfileActivity" />
+        <activity android:name=".Activity.Admin.AdminViewAppointmentDetailsActivity" />
+        <activity android:name=".Activity.Admin.AdminViewAppointmentsActivity" />
+        <activity android:name=".Activity.Admin.AdminViewPatientDetailsActivity" />
+        <activity android:name=".Activity.Admin.AdminViewDoctorDetailsActivity" />
+        <activity android:name=".Activity.Admin.AdminViewPatientsActivity" />
+        <activity android:name=".Activity.Admin.AdminViewDoctorsActivity" />
+        <activity android:name=".Activity.Doctor.DoctorChangePswActivity" />
+        <activity android:name=".Activity.Doctor.DoctorViewPatientProfileActivity" />
+        <activity android:name=".Activity.Doctor.DoctorViewAppointmentsDetailsActivity" />
+        <activity android:name=".Activity.Doctor.DoctorViewAppointmentsActivity" />
+        <activity android:name=".Activity.Doctor.DoctorProfileActivity" />
+        <activity android:name=".Activity.Patient.DentalAboutActivity" />
+        <activity android:name=".Activity.Patient.PatientViewAppointmentDetailsActivity" />
+        <activity android:name=".Activity.Patient.PatientAppointmentsActivity" />
+        <activity android:name=".Activity.Patient.PatientViewDoctorDetailsActivity" />
+        <activity android:name=".Activity.Patient.PatientViewDoctorsActivity" />
+        <activity android:name=".Activity.Patient.PatientProfileActivity" />
+        <activity android:name=".Activity.Patient.PatientPswChangeActivity" />
+        <activity android:name=".Activity.Admin.AdminDashboardActivity" />
+        <activity android:name=".Activity.Doctor.DoctorDashboardActivity" />
+        <activity android:name=".Activity.Patient.PatientDashboardActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

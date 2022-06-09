@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    tools:context=".Activity.Admin.AdminDentalAboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="Dental Details"
+                android:textColor="@color/indigo"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Dental Name"
+                    android:textColorHint="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Dental Email"
+                    android:textColorHint="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Dental Phone Number"
+                    android:textColorHint="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_phone"
+                    app:startIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Dental Address"
+                    android:textColorHint="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_home"
+                    app:startIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldOpeningDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Opening Days"
+                    android:textColorHint="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_calendar"
+                    app:startIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="text"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFieldOpeningHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Opening Hours"
+                    android:textColorHint="@color/indigo"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/indigo"
+                    app:startIconDrawable="@drawable/ic_clock"
+                    app:startIconTint="@color/indigo"
+                    app:boxStrokeColor="@color/indigo"
+                    app:hintTextColor="@color/indigo"
+                    app:placeholderTextColor="@color/indigo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="text"
+                        android:textColor="@color/indigo" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="220dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bluecircle"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Update Details"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="220dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bluecirclestoke"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
